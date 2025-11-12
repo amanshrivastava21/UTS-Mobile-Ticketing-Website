@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTS - website</title>
+    <link rel="stylesheet" href="signUp.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/> 
+    <link rel="icon" href="railwayLogo.jpg">
+  </head>
+  <body>
+    <div class="container">
+      <div class="firstbox">
+        <div class="logo">
+          <img src="railwayLogo.jpg" alt="indian railway" height="90px" id="logoImage" />
+          <h1 id="strong"> Indian Railway</h1><br />
+          <p id="nation">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lifeline
+            to the nation....
+          </p>
+        </div>
+
+        <div class="center"><h1>UTS Mobile Ticketing</h1></div>
+
+        <div class="right">
+          <h3 id="rightPara">Centre For Railway Informatio Systems</h3>
+          <small>(An organization of the Ministry of Railways, Govt. ofIndia)</small>
+        </div>
+      </div>
+      <div class="navbar">
+        <div class="navbox" id="none"></div>
+<div class="navbox"><i class="fa fa-home"></i><a href="vhttp://127.0.0.1:5500/Frontend/project.html">Home </a></div>
+<div class="navbox"><i class="fa fa-info-circle"></i><a href="http://127.0.0.1:5500/Frontend/GettingStarted.html"> Getting Started </a></div>
+<div class="navbox"><i class="fa fa-book"></i><a href="http://127.0.0.1:5500/Frontend/help.html">Help</a></div>
+<div class="navbox"><i class="fa fa-phone"></i> <a href="http://127.0.0.1:5500/Frontend/contactUs.html">Contact Us </a></div>
+<div class="navbox"><i class="fa fa-plus"></i>A</div>
+<div class="navbox"><i class="fa fa-none"></i>A</div>
+<div class="navbox"><i class="fa fa-minus"></i> A</div>
+<div class="navbox" id="none1"><i class="fa fa-language"></i>Language
+    <select >
+       <option >Choose One</option>
+        <option >English</option>
+        <option >Hindi</option>
+    </select>
+
+</div>
+      </div>
+      <div class="imagebox">
+         <a href="https://www.myntra.com/"><img src="Myntra_ad.jpg" alt="image loading"  height="230px" width="600px"></a>
+      </div>
+      <h2 id="registration">  User Registration</h2>
+       <hr class="line">
+
+       <div id="userParagraph">
+        <p>Please register your details for Indian Railways Unreserved Ticketing. This is one time activity and after successful registration, you can login into <b> UTS Mobile Ticketing Website </b>as well as  <b>UTSonMobile application </b> on <b> Android, Windows & iOS </b> based mobile phones with your <b> Mobile Number as Login ID</b> and <b>choosen Password.</b></p> 
+
+        <p>After successful registration, a wallet will be created with zero balance, called as <b> Railway-Wallet (R-WALLET)</b>. User can  <b>Recharge R-WALLET  </b> through UTS Mobile Ticketing Website or UTSonMobile application and he/she can <b> Book Unreserved Tickets (Journey, Platform and Season)</b> through UTSonMobile application after making payment through R-WALLET or OTHERS payment mode options.</p> <br>
+       <hr class="userLine">
+       </div>
+
+       <div id="userInput">
+<label for="name">Enter Your Name :</label>
+<input type="text" placeholder="Enter Your Name" id="name">
+
+<label for="number">Enter Mobile Number :</label>
+<input type="number" placeholder="Enter Mobile Number" id="number">
+
+<label for="Password">Set Password :</label>
+<input type="password" placeholder="Set Your Password" id="Password">
+
+<label for="Confirm">Confirm Password :</label>
+<input type="password" placeholder="Confirm Your Password" id="Confirm">
+
+<label > Select Gender :</label>
+<select  class="userSelect">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="transgender">Transgender</option>
+</select>
+
+<label for="date-of-birth">Select Date of Birth (dd-mm-yyyy) :</label>
+<input type="date" placeholder="Select date of birth" id="date-of-birth">
+
+<label >ID Card Type :</label>
+<select  class="userSelect"> 
+    <option value="choose one">Choose One</option>
+    <option value="">Adhar Card</option>
+    <option value="">Pan Card</option>
+    <option value="">Voter Card</option>
+</select>
+
+<label for="id-card">Enter ID Card Number:</label>
+<input type="text" placeholder="Enter Your ID Card Number" id="id-card">
+
+<label for="">Enter Your City:</label>
+<select   class="userSelect">
+    <option>Choose one </option>
+    <option value="gwl">Gwalior</option>
+    <option value="bh">Bhopal</option>
+    <option value="dl">Delhi</option>
+    <option value="pune">Pune</option>
+    <option value="jaipur">Jaipur</option>
+</select>
+
+<label for="">Enter Captcha:</label>
+<input type="text" placeholder="Enter Captcha">
+<p id="prove-that">Prove that you are not a machine?</p>
+ <div class="captcha-row ">
+        <span class="captcha">227bW</span>
+        <a href="#" id="refresh">[Refresh]</a>
+        <button id="generate">Generate OTP</button>
+        <input type="text" id="otpInput" placeholder="Enter OTP" style="display:none;">
+<button id="verifyOtp" style="display:none;">Verify OTP</button>
+<p id="otpStatus" style="color:green; display:none;">OTP Verified ✅</p>
+
+      </div>
+       </div>
+       <hr class="footer-line">
+          <div class="lastline">
+      <div class="lastbox" id="ls1"> <a href="https://services.india.gov.in/service/detail/uts-mobile-ticketing-services-by-indian-railways"><img src="india.gov.in.png" alt="loading." height="50px" width="80px"></a></div>
+      <div class="lastbox" id="ls2"><p id="plast">  Copyright ©  Centre for Railway Information Systems. All rights reserved. <br>      
+                                                    Last modified: Aug 05, 2025 <br>
+                                                    <a href="http://127.0.0.1:5500/Frontend/Privacy.html" class="ls">Privacy</a> | <a href="http://127.0.0.1:5500/Frontend/Terms&Condition.html" class="ls">Terms and Conditions</a>
+      </p></div>
+      <div class="lastbox" id="ls3"><a href="https://apps.apple.com/in/app/uts/id1357055366"><img src="apple_logo.jpg" alt="loading" height="50px" width="80px"></a></div>
+     </div>
+
+    </div>
+    </div>
+    <script src="signUp.js"></script>
+  </body>
+</html>

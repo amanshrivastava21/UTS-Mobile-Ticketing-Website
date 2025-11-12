@@ -1,0 +1,114 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Book Ticket - Mockup</title>
+  <link rel="stylesheet" href="Dashboard.css" />
+</head>
+<body>
+  <!-- If you want the exact screenshot as header background,
+       put the image file in the same folder and name it header-bg.jpg
+       or change the CSS background-image in .top-hero -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="logo">INDIAN<br/>RAIL</div>
+    </div>
+    <div class="topbar-center">
+      <nav class="nav">
+        <button class="nav-pill">IRCTC EXCLUSIVE</button>
+        <button class="nav-pill active">TRAINS</button>
+        <button class="nav-pill">LOYALTY</button>
+        <button class="nav-pill">IRCTC eWallet</button>
+      </nav>
+    </div>
+    <div class="topbar-right">
+      <div class="user">Welcome User <span class="userid">(USER ID)</span></div>
+      <button class="logout">Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="top-hero">
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-nav">
+            <div class="nav-box">PNR STATUS</div>
+            <div class="nav-box">CHARTS / VACANCY</div>
+            <div class="nav-box">Refund Status</div>
+            <div class="nav-box">Re-Book Favourite Journey</div>
+          </div>
+        </div>
+
+        <h1 class="title">BOOK TICKET</h1>
+
+        <form id="booking-form" class="booking-form" autocomplete="off">
+          <div class="row">
+            <div class="col">
+              <label class="input-label">From</label>
+              <div class="input-with-icon">
+                <input id="from" name="from" placeholder="From" />
+                <button type="button" class="swap-btn" id="swapBtn" title="Swap from/to">&#8646;</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <label class="input-label">DD/MM/YYYY *</label>
+              <div class="input-with-icon">
+                <input id="date" name="date" type="date" />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <label class="input-label">To</label>
+              <input id="to" name="to" placeholder="To" />
+            </div>
+
+            <div class="col">
+              <label class="input-label">Class</label>
+              <select id="classSelect" name="class">
+                <option>All Classes</option>
+                <option>1A</option>
+                <option>2A</option>
+                <option>3A</option>
+                <option>SL</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col wide">
+              <label class="input-label">Quota</label>
+              <select id="quota" name="quota">
+                <option>GENERAL</option>
+                <option>Ladies</option>
+                <option>Senior Citizen</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="checkbox-row">
+            <label><input type="checkbox" id="pwd" /> Person With Disability Concession</label>
+            <label><input type="checkbox" id="flex" /> Flexible With Date</label>
+            <label><input type="checkbox" id="available" /> Train with Available Berth</label>
+            <label><input type="checkbox" id="pass" /> Railway Pass Concession</label>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" id="searchBtn" class="search">Search</button>
+            <button type="button" class="askdisha">Easy Booking on AskDISHA</button>
+          </div>
+
+          <div class="date-display" id="prettyDate"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="Dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+/* body{
+    background-image: url("dashboard_Image.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#navbar{
+    border: 1px solid ;
+    background-color: white;
+
+} */
+
+
+:root{
+  --blue:#1f497f;
+  --light-blue:#2f6aa6;
+  --accent:#f7953a;
+  --panel-bg: #ffffffdd;
+  --muted:#6b6b6b;
+  --border: #e6e9ee;
+  --radius:10px;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+*{box-sizing:border-box ;
+margin: 0;}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#e9f5ff 0%, #f7fbff 60%);
+  color:#173248;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  min-height:100vh;
+      background-image: url("dashboard_Image.jpg");
+      background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* topbar */
+.topbar{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:8px 18px;
+  background:#0f3a5a;
+  color:#fff;
+}
+.logo{
+  width:80px;
+  height:48px;
+  background:linear-gradient(180deg,#123f6a,#0b2b48);
+  padding:6px;
+  font-weight:700;
+  font-size:14px;
+  text-align:center;
+  line-height:1.1;
+  border-radius:6px;
+}
+.nav { display:flex; gap:6px; align-items:center; }
+.nav-pill{
+  border:0;
+  background:#2e5f8a;
+  color:#fff;
+  padding:8px 10px;
+  border-radius:4px;
+  font-weight:600;
+  cursor:pointer;
+}
+.nav-pill.active{ background:#ff9a2e; color:#082034; }
+
+.topbar-right{ margin-left:auto; display:flex; align-items:center; gap:10px; }
+.user{ font-size:14px; opacity:0.95; }
+.logout{
+  background:#f7933a;
+  color:#082034;
+  border:0;
+  padding:8px 10px;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:700;
+}
+
+/* hero panel */
+.top-hero{
+  padding:28px;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  gap:24px;
+  background-image: url('header-bg.jpg'); /* replace with your image */
+  background-size:cover;
+  background-position:center right;
+  min-height:520px;
+}
+
+.panel{
+  width:880px;
+  background:var(--panel-bg);
+  border-radius:12px;
+  padding:22px 28px 30px;
+  box-shadow: 0 10px 30px rgba(15,35,50,0.08);
+  border:1px solid var(--border);
+}
+
+/* small nav boxes inside panel */
+.panel-nav{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-bottom:14px;
+}
+.nav-box{
+  background:linear-gradient(180deg,#194b75,#234f7e);
+  color:white;
+  padding:10px;
+  border-radius:4px;
+  text-align:center;
+  font-weight:700;
+  font-size:13px;
+}
+
+/* title */
+.title{
+  text-align:center;
+  color:var(--blue);
+  font-size:32px;
+  margin:18px 0 22px;
+  letter-spacing:1px;
+}
+
+/* form layout */
+.booking-form .row{
+  display:flex;
+  gap:18px;
+  margin-bottom:14px;
+}
+.booking-form .col{ flex:1; min-width:0; }
+.booking-form .col.wide{ flex:1 1 100%; }
+
+.input-label{ font-size:12px; color:var(--muted); display:block; margin-bottom:6px; font-weight:600; }
+
+.input-with-icon{ position:relative; }
+.input-with-icon input,
+.booking-form input[type="text"],
+.booking-form select{
+  width:100%;
+  padding:12px 14px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  font-size:15px;
+  outline:none;
+  background:#fff;
+}
+.input-with-icon input[type="date"]{ padding:10px 12px; }
+
+.swap-btn{
+  position:absolute;
+  right:6px;
+  top:50%;
+  transform:translateY(-50%);
+  border:0;
+  background:#fff;
+  padding:6px 8px;
+  border-radius:6px;
+  cursor:pointer;
+  box-shadow:0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* checkboxes */
+.checkbox-row{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin:12px 0 16px;
+  color:var(--muted);
+  font-size:13px;
+}
+.checkbox-row label{ display:flex; gap:8px; align-items:center; }
+
+/* buttons */
+.form-actions{
+  display:flex;
+  gap:16px;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:6px;
+}
+.search{
+  background:var(--accent);
+  border:0;
+  font-weight:700;
+  padding:12px 22px;
+  border-radius:8px;
+  cursor:pointer;
+}
+.askdisha{
+  background:#ff8a3d;
+  border:0;
+  color:white;
+  padding:12px 18px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:700;
+}
+
+/* small footer text for pretty date */
+.date-display{
+  margin-top:10px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* responsive */
+@media (max-width:920px){
+  .panel{ width:100%; padding:16px; }
+  .panel-nav{ grid-template-columns:repeat(2,1fr); }
+  .top-hero{ padding:18px; }
+}

@@ -1,0 +1,261 @@
+body {
+  margin: 5px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: #1a73e8;
+}
+
+.container {
+  border: 1px solid white;
+  width: 1522px;
+  border-radius: 20px;
+  background-color: white;
+  display: grid;
+  gap: 0;
+  margin: 0;
+}
+.firstbox {
+ 
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100px;
+}
+
+#logoImage {
+  margin-left: -380px;
+  margin-top: -10px;
+  margin-bottom: 50px;
+
+}
+
+#nation{
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: -190px;
+}
+
+#strong {
+  color: #1a73e8;
+  margin-top: -130px;
+  margin-left: -90px;
+  font-size: 27px;
+}
+
+#rightPara,small{
+  margin-right: -140px;
+}
+
+.logo,
+.right,
+.center {
+  text-align: center;
+}
+
+
+
+.logo p {
+  margin: 0px;
+  font-size: 8px;
+  color: #000;
+ 
+}
+
+.center h1 {
+  color: darkblue;
+  margin: 0;
+  font-size: 40px;
+  text-align: center;
+}
+
+.right h3 {
+  font-size: medium;
+  margin: 0;
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.right small {
+  font-size: 8px;
+  color: #1a73e8;
+}
+
+.navbar{
+  background-color: darkblue;
+  color: white;
+  height: 50px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 650px 100px 150px 100px 100px  40px 40px 40px 232px;
+  text-align: center;
+  flex-direction: column;
+  font-size: small;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  
+}
+.navbox {
+  display: grid;
+cursor: pointer;
+  grid-auto-flow: column;
+  align-items: center;
+ 
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  
+}
+
+select {
+  width: 100px;
+  justify-self: center;
+}
+
+#none,#none1{
+    cursor: default;
+}
+#none,#none1:hover{
+    background-color: darkblue;
+    
+}
+
+.navbox:hover{
+    background-color: black;
+    color: white;
+}
+
+.imagebox{
+    height: 230px;
+     justify-self: center;
+}
+
+h1{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 15px;
+  margin-top: 20px; 
+  margin-bottom: -18px;        
+}
+
+.line {
+  border: none;
+  border-top: 1px solid lightgray; 
+  margin:20px;
+  margin-bottom: 40px;        
+}
+
+
+
+.customer-feedback{
+  justify-self: center;
+  height: 500px;
+  width: 700px;
+  display: grid;
+  border: 1px solid blue;
+  
+
+}
+#cf1{
+  border: 1px solid blue;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  padding: 20px;
+  align-content: center;
+  font-size: 22px;
+  
+}
+
+#cf2{
+  border: 1px solid blue;
+  
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 5px;
+
+}
+
+#cf3{
+ border: 1px solid blue;
+  background-color: lightblue;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 5px;
+  
+}
+
+#cf4{
+  text-align: center;
+   border: 1px solid blue;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 8;
+  padding: 5px;
+
+}
+
+#cf5{
+  text-align: center;
+   border: 1px solid blue;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 8;
+  grid-row-end: 13;
+  padding: 5px;
+
+}
+
+#cfh{
+  color: brown;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#ca{
+  color: blue;
+}
+
+
+.footer-line {
+  border: none;
+  border-top: 1px solid black; 
+  margin:20px;        
+}
+
+.lastline{
+  height: 60px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  text-align: center;  
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+  img{
+    cursor: pointer;
+  }
+  
+
+
+#ls2{
+ font-size: small;
+}
+
+
+#privacy,#terms{
+  color: blue;
+}
